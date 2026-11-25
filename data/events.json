@@ -1,0 +1,51 @@
+[
+  {
+    "id": "reject-and-remap",
+    "events": [
+      {
+        "kind": "submit_gradients",
+        "parts": [
+          "p1",
+          "p2"
+        ]
+      },
+      {
+        "kind": "loss_scale_failure",
+        "parameter": "dense_parameter"
+      },
+      {
+        "kind": "retry",
+        "window_id": "w-1"
+      },
+      {
+        "kind": "migrate",
+        "revision": "v2"
+      },
+      {
+        "kind": "step",
+        "row_ids": [
+          0,
+          2,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "missing-and-zero",
+    "events": [
+      {
+        "kind": "step",
+        "sparse_rows": [],
+        "dense": "present"
+      },
+      {
+        "kind": "step",
+        "sparse_rows": [
+          2
+        ],
+        "values": "explicit_zero"
+      }
+    ]
+  }
+]

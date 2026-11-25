@@ -1,0 +1,60 @@
+{
+  "vocabulary": {
+    "revision": "v1",
+    "token_ids": [
+      "t-a",
+      "t-b",
+      "t-c",
+      "t-d",
+      "t-e",
+      "t-f"
+    ]
+  },
+  "parts": [
+    {
+      "part_id": "p1",
+      "row_ids": [
+        1,
+        3,
+        4
+      ],
+      "tensor": "gradient_part_a"
+    },
+    {
+      "part_id": "p2",
+      "row_ids": [
+        1,
+        5
+      ],
+      "tensor": "gradient_part_b"
+    }
+  ],
+  "row_clocks": [
+    0,
+    4,
+    0,
+    3,
+    2,
+    0
+  ],
+  "group_step": 8,
+  "hyperparameters": {
+    "beta": 0.9,
+    "lr": 0.01,
+    "eps": 1e-08,
+    "decay": 0.01,
+    "loss_scale": 8,
+    "clip_norm": 1
+  },
+  "new_vocabulary": {
+    "revision": "v2",
+    "token_ids": [
+      "t-f",
+      "t-a",
+      "t-new",
+      "t-c",
+      "t-b",
+      "t-e"
+    ]
+  }
+}

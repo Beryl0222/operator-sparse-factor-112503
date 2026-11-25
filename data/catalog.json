@@ -1,0 +1,15 @@
+{
+  "product": "稀疏参数的因子化优化与词表状态迁接",
+  "provenance": "所有数值、实体和事件均为本地合成资料，不代表真实用户或已发生事故。",
+  "format_revision": 1,
+  "tensors": {
+    "parameter": "data/tensors/parameter.json",
+    "dense_parameter": "data/tensors/dense_parameter.json",
+    "row_factor": "data/tensors/row_factor.json",
+    "column_factor": "data/tensors/column_factor.json",
+    "gradient_part_a": "data/tensors/gradient_part_a.json",
+    "gradient_part_b": "data/tensors/gradient_part_b.json",
+    "dense_gradient": "data/tensors/dense_gradient.json",
+    "parameter_v2": "data/tensors/parameter_v2.json"
+  }
+}
