@@ -1,0 +1,53 @@
+{
+  "id": "large-vocabulary",
+  "parameters": {
+    "vocabulary_prefix": "token-",
+    "parameter_revision": "large-p1"
+  },
+  "arrays": {
+    "parameter": {
+      "shape": [
+        65536,
+        128
+      ],
+      "pattern": "uniform",
+      "dtype": "float32",
+      "low": -0.1,
+      "high": 0.1
+    },
+    "gradient_rows": {
+      "shape": [
+        4096,
+        128
+      ],
+      "pattern": "uniform",
+      "dtype": "float32",
+      "low": -0.1,
+      "high": 0.1
+    },
+    "row_indices": {
+      "shape": [
+        4096
+      ],
+      "pattern": "arange",
+      "dtype": "int64",
+      "step": 8
+    },
+    "row_factor": {
+      "shape": [
+        65536
+      ],
+      "pattern": "constant",
+      "dtype": "float32",
+      "value": 0.1
+    },
+    "column_factor": {
+      "shape": [
+        128
+      ],
+      "pattern": "constant",
+      "dtype": "float32",
+      "value": 0.1
+    }
+  }
+}
